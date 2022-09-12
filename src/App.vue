@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <MyNavbar/>
     <router-view/>
+    <MyFooter/>
   </div>
 </template>
 
 <script>
+import MyNavbar from './components/MyNavbar.vue'
+import MyFooter from './components/MyFooter.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: { MyNavbar, MyFooter }
 }
 </script>
 
