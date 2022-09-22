@@ -36,8 +36,8 @@
 </template>
 
 <script>
-import {createNamespacedHelpers, mapState } from 'vuex'
-import LoaderCard from "../components/home/LoaderCard.vue"
+import {createNamespacedHelpers, mapState } from 'vuex';
+import LoaderCard from "../components/home/LoaderCard.vue";
 import SingleCard from '@/components/home/SingleCard.vue'
 
 
@@ -47,14 +47,14 @@ export default {
     name: "FavouriteBooks",
     computed:{
       ...mapState("booksModule",["favouriteBooks", "isLoading"]),
-  },
-    data () {
-      return {
+    },
+    data() {
+        return {
 
-    }
+        };
     },
     components: { LoaderCard, "single-card": SingleCard },
-    mounted () {
+    mounted(){
       this.getFavouriteBooks()
     },
     methods: {
@@ -62,7 +62,7 @@ export default {
       async getFavouriteBooks(){
         // this.setFavouriteBooksAction()
       },
-      showBooks () {
+      showBooks(){
         console.log("--", this.favouriteBooks, this.books)
 
       }
