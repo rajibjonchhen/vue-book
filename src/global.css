@@ -1,0 +1,95 @@
+ :root{
+   --theme-color :  rgb(5, 135, 210);
+ }
+
+.theme-bg{
+  background-color: var(--theme-color);
+}
+
+.theme-text{
+  color:var(--theme-color);
+}
+
+.theme-border{
+  border:1px solid var(--theme-color)
+}
+
+.pRelative{
+  position: relative;
+}
+
+.pAbsolute{
+  position: absolute;
+}
+
+.theme-btn{
+  color: white ;
+  border:1px solid var(--theme-color);
+  background-color: var(--theme-color);
+}
+
+
+.theme-btn-outline{
+  color:var(--theme-color);
+  border:1px solid var(--theme-color);
+  background-color:white;
+}
+
+/* hover effect */
+.theme-btn:hover{
+  color:white;
+  border:1px solid var(--theme-color) !important;
+  background-color:var(--theme-color) !important;
+  box-shadow: inset 0px 0px 2px 2px rgb(219, 218, 218);
+}
+
+.theme-btn-outline:hover{
+  color:white;
+  border:1px solid var(--theme-color) !important;
+  background-color:var(--theme-color) !important;
+  box-shadow: inset 0px 0px 2px 2px rgb(219, 218, 218);
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.enlarge-hover:hover{
+  transform: scale(1.05) ;
+  transition: all ease 0.3;
+}
+
+input{
+  width: 100%;
+}
+label{
+  text-align: left;
+  font-weight: bold;
+}
+
+.special-text{
+  color:rgb(59, 120, 140);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.special-text:hover{
+  color:rgb(67, 158, 188);
+}
+
+.error-msg{
+  color:red;
+  font-size: 12px;
+  margin-left: auto ;
+}
+
+input{
+ border:1px solid rgba(67, 158, 188, 0.487) ;
+ border-radius: 5px;
+ padding:3px 5px;
+}
+
+input:focus{
+ border:1px solid rgb(67, 158, 188) ;
+
+}
