@@ -1,6 +1,11 @@
 <template>
   <div class="my-navbar">
     <h2>My Navbar</h2>
+    <router-link :to="{name:'Home', path: '/'}">Home</router-link>
+    <router-link :to="{name:'Detail', path: '/detail'}">Detail</router-link>
+    <router-link :to="{name:'About', path: '/about'}">About</router-link>
+    <router-link :to="{name:'Login', path: '/login'}">Login</router-link>
+
   </div>
 </template>
 
