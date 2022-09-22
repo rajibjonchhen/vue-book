@@ -1,27 +1,23 @@
 <template>
-  <div id='app' class="align-components">
-    <MyNavbar />
-    <div class="main-body">
+  <div id="app">
+    <MyNavbar/>
+    <main>
       <router-view/>
-    </div>
-    <MyFooter />
+    </main>
+    <MyFooter/>
   </div>
 </template>
 
 <script>
-import MyFooter from './components/MyFooter.vue'
 import MyNavbar from './components/MyNavbar.vue'
-
+import MyFooter from './components/MyFooter.vue'
 export default {
   name: 'App',
-  components: { MyFooter, MyNavbar },
-
+  components: { MyNavbar, MyFooter }
 }
 </script>
 
 <style>
-  @import './global.css';
-
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,13 +25,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin: 0px;
-  min-width:300px;
+  padding:0;
 }
-
-.align-components{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+main{
+  min-height: 80vh;
 }
 </style>

@@ -1,12 +1,13 @@
 <template>
-  <div class="my-navbar">
-    <h2>My Navbar</h2>
+  <div class="home">
+    <h1> Home Page {{ msg }}</h1>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MyNavbar',
+  name: 'Home',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -17,10 +18,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.my-navbar{
-  width:100%;
-  background-color: rgb(48, 158, 214);
-  margin: 0;
-  padding:0;
+h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
 }
 </style>

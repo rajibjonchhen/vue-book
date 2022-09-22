@@ -1,35 +1,27 @@
-<template key>
-  <div class='my-footer theme-bg text-light p-2' >
-    <h4>All right reserve @codex-software</h4>
+<template>
+  <div class="my-footer">
+    <h2>My Footer</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MyFooter',
+  name: 'MyNavbar',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      doNotShowFooter:true
+      msg: 'Welcome to Your Vue.js App'
     }
-  },
-
-  methods:{
-    checkRoutes() {
-      if(this.$route.params === "/login"){
-        this.doNotShowFooter = true
-      }
-
-    },
   }
 }
 </script>
 
-<!-- Add 'scoped' attribute to limit CSS to this component only -->
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.my-footer {
-  width: 100%;
+.my-footer{
+  width:100%;
+  background-color: rgb(48, 158, 214);
   margin: 0;
-  padding: 0
+  padding:0;
+
 }
 </style>

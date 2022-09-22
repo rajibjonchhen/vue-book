@@ -1,5 +1,5 @@
 {
-  "name": "book-store",
+  "name": "vue-book-store",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "rajibjonchhen <rajib.jonchhen@gmail.com>",
@@ -11,16 +11,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "bootstrap": "^5.2.1",
-    "bootstrap-vue": "^2.22.0",
-    "lodash": "^4.17.21",
-    "serve-static": "^1.15.0",
-    "vue": "^2.7.10",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.0"
+    "express": "^4.18.1",
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.185",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
@@ -34,7 +29,6 @@
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
-    "dotenv": "^16.0.2",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
