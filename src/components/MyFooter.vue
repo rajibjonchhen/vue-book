@@ -21,5 +21,7 @@ export default {
   width:100%;
   background-color: rgb(48, 158, 214);
   margin: 0;
+  padding:0;
+
 }
 </style>
