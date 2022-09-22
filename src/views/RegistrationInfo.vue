@@ -27,7 +27,7 @@ export default {
 
     async handleResend(){
       const data = await this.$store.dispatch("loginModule/resendEmailVeriAction", this.userId)
-      if(data){
+      if (data) {
         this.msg = data.message
       }
     }
