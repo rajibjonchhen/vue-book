@@ -1,4 +1,4 @@
-<template key>
+<template >
   <form>
     <p class="h3">Enter Details to register</p>
     <form>
